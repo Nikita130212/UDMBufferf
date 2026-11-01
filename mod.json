@@ -1,0 +1,209 @@
+{
+  "geode": "5.7.1",
+  "gd": {
+    "win": "2.2081"
+  },
+  "id": "udmurt.buffers",
+  "name": "UDMURT Buffers",
+  "version": "v1.1.0",
+  "developer": "UDMURT",
+  "description": "Fine-grained control over Input Buffer with per-mode and per-click toggles, custom delay windows, and a themed UI.",
+  "repository": "https://github.com/Sennot/udmurt-buffers",
+  "dependencies": {
+    "lyophi.buffermod": {
+      "version": ">=1.1.0",
+      "importance": "suggested"
+    }
+  },
+  "settings": {
+    "master-enable": {
+      "name": "Enable UDMURT Buffers",
+      "type": "bool",
+      "default": true
+    },
+    "mode-cube": {
+      "name": "Cube",
+      "type": "bool",
+      "default": true
+    },
+    "mode-ship": {
+      "name": "Ship",
+      "type": "bool",
+      "default": false
+    },
+    "mode-ball": {
+      "name": "Ball",
+      "type": "bool",
+      "default": true
+    },
+    "mode-ufo": {
+      "name": "UFO",
+      "type": "bool",
+      "default": false
+    },
+    "mode-wave": {
+      "name": "Wave",
+      "type": "bool",
+      "default": true
+    },
+    "mode-robot": {
+      "name": "Robot",
+      "type": "bool",
+      "default": true
+    },
+    "mode-spider": {
+      "name": "Spider",
+      "type": "bool",
+      "default": true
+    },
+    "mode-swing": {
+      "name": "Swing",
+      "type": "bool",
+      "default": false
+    },
+    "click-landing": {
+      "name": "Landing Buffer",
+      "type": "bool",
+      "default": true
+    },
+    "click-orb": {
+      "name": "Orb Buffer",
+      "type": "bool",
+      "default": true
+    },
+    "click-min-hold": {
+      "name": "Min Hold",
+      "type": "bool",
+      "default": true
+    },
+    "click-min-gap": {
+      "name": "Min Gap",
+      "type": "bool",
+      "default": true
+    },
+    "click-grid": {
+      "name": "Grid",
+      "type": "bool",
+      "default": true
+    },
+    "unit": {
+      "name": "Delay Unit",
+      "type": "string",
+      "default": "frames",
+      "one-of": [
+        "frames",
+        "ticks"
+      ]
+    },
+    "landing-window": {
+      "name": "Landing Window",
+      "type": "int",
+      "default": 0,
+      "min": 0,
+      "max": 16,
+      "control": {
+        "slider": true
+      }
+    },
+    "orb-window": {
+      "name": "Orb Window",
+      "type": "int",
+      "default": 0,
+      "min": 0,
+      "max": 16,
+      "control": {
+        "slider": true
+      }
+    },
+    "min-hold-window": {
+      "name": "Min Hold Window",
+      "type": "int",
+      "default": 0,
+      "min": 0,
+      "max": 16,
+      "control": {
+        "slider": true
+      }
+    },
+    "min-gap-window": {
+      "name": "Min Gap Window",
+      "type": "int",
+      "default": 0,
+      "min": 0,
+      "max": 16,
+      "control": {
+        "slider": true
+      }
+    },
+    "grid-window": {
+      "name": "Grid Window",
+      "type": "int",
+      "default": 0,
+      "min": 0,
+      "max": 16,
+      "control": {
+        "slider": true
+      }
+    },
+    "ship-window": {
+      "name": "Ship Override",
+      "type": "int",
+      "default": 0,
+      "min": 0,
+      "max": 16,
+      "control": {
+        "slider": true
+      }
+    },
+    "ufo-window": {
+      "name": "UFO Override",
+      "type": "int",
+      "default": 0,
+      "min": 0,
+      "max": 16,
+      "control": {
+        "slider": true
+      }
+    },
+    "wave-window": {
+      "name": "Wave Override",
+      "type": "int",
+      "default": 0,
+      "min": 0,
+      "max": 16,
+      "control": {
+        "slider": true
+      }
+    },
+    "swing-window": {
+      "name": "Swing Override",
+      "type": "int",
+      "default": 0,
+      "min": 0,
+      "max": 16,
+      "control": {
+        "slider": true
+      }
+    },
+    "fps": {
+      "name": "FPS",
+      "type": "int",
+      "default": 60,
+      "min": 30,
+      "max": 360
+    },
+    "log": {
+      "name": "Debug Logging",
+      "type": "bool",
+      "default": false
+    },
+    "open-ui": {
+      "name": "Open UDMURT UI",
+      "type": "button",
+      "buttons": {
+        "open": "Open Settings"
+      },
+      "description": "Opens the custom UDMURT Buffers settings window."
+    }
+  }
+}
