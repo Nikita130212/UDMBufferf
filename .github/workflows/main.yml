@@ -1,0 +1,28 @@
+name: Build Geode Mod
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  build:
+    name: Build Windows
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build the mod
+        uses: geode-sdk/build-geode-mod@main
+        id: build
+        with:
+          target: Win64
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: UDMURT-Buffers
+          path: output/*.geode
+          if-no-files-found: error
